@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrencyConvertor</title>
+    <script src="fun.js">fun.js</script>
+</head>
+<style>
+    /* Box styling */
+    .box {
+        position:absolute;
+        top:40px;
+        left:500px;
+        width:280px; /* Box width */
+        height:100px; /* Box height */
+        border:2px solid black; /* Border */
+        border-radius: 10px; /* Rounded corners */
+        background-color: lightgray; /* Background color */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    }
+
+    /* Container inside the box */
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column; /* Arrange elements vertically */
+        gap: 10px; /* Space between inputs */
+    }
+
+    /* Input fields */
+    input {
+        padding: 8px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button{
+        position:absolute;
+        top:200px;
+        width:100px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    }
+    .DYK{
+        display:flex;
+        position:absolute;
+        width:400px;
+        height:200px;
+        left:600px;
+    }
+    .kuch_bhi{
+        position:absolute;
+        width:200px;
+        left:720px;
+        top:140px;
+        color:rgb(188, 9, 9);
+        font-size:20px;
+    }
+</style>
+<body>
+    <div class="box" style="width:200px; height:500px;">
+            <div class="container"style="width:200px; height:500px;">
+                <input type="text" id="FirstCurrency" placeholder="Enter First Currency">
+                <input type="text" id="SecondCurrency" placeholder="Enter Second Currency">
+                <input type="text" id="Amount" placeholder="Enter the amount">
+                <input type="text"id="conversion" readonly>
+            </div>
+            <div class="kuch_bhi">
+                <p>DID YOU KNOW</p>
+            </div>
+            <div class="DYK"></div>
+            <button onclick="convertCurrency()">Convert</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
